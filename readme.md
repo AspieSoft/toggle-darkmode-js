@@ -37,6 +37,6 @@ DarkMode.invert(['img', 'iframe', 'embed']); // add to the list of element tags 
 
 ```html
 
-<input type="button" value="Toggle Dark Mode" onclick="toggleDarkMode()">
+<input type="button" value="Toggle Dark Mode" onclick="DarkMode.toggle()">
 
 ```
