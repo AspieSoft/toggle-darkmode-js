@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <style>
+      input[type="button"] {
+        background: #3087d9;
+        color: white;
+        padding: 5px 10px;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Test</h1>
+    <div style="background: #3b3b3b; color: white; width: 500px; height: 300px; padding: 5px 10px;">
+      <h1>This is a test</h1>
+      <input type="button" onclick="DarkMode.toggle()" value="Toggle Dark Mode">
+    </div>
+    <br>
+    <input type="button" onclick="DarkMode.toggle()" value="Toggle Dark Mode">
+    <br>
+  </body>
+  <script>
+    setInterval(function(){
+      $('body').append('<h3>Test</h3>');
+    }, 3000);
+  </script>
+</html>

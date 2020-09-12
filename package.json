@@ -1,0 +1,25 @@
+{
+  "name": "toggle-darkmode-js",
+  "version": "1.0.0",
+  "description": "Easily toggle dark mode and auto detect if user device prefers dark mode.",
+  "license": "MIT",
+  "author": "AspieSoft",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aspiesoft/random-number-js.git"
+  },
+  "main": "script.js",
+  "keywords": [
+    "javascript",
+    "darkmode",
+    "toggle",
+    "auto",
+    "js"
+  ],
+  "devDependencies": {
+    "@aspiesoft/miniforge-js": "^1.0.0"
+  }
+}
