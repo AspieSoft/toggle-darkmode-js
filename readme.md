@@ -27,7 +27,7 @@ Reverses filters on images, iframes, videos, embeds, ect.
 // this function runs automatically, so usage is optional
 
 DarkMode.toggle(); // toggles dark mode on or off
-DarkMode.toggle('dart'); // toggles darkmode on
+DarkMode.toggle('dark'); // toggles darkmode on
 DarkMode.toggle('light'); // toggles darkmode off
 
 DarkMode.ignore(['script', 'style', 'br']); // add to the list of element tags to ignore (for hidden elements)
