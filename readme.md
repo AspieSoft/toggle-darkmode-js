@@ -18,7 +18,7 @@ Reverses filters on images, iframes, videos, embeds, ect.
 <!-- or alternatively jqAlt (by AspieSoft) - v0.0.16 (alpha) or later -->
 <script src="https://cdn.jsdelivr.net/gh/AspieSoft/jqalt@0.0.16/jqalt/index.js" type="module"></script>
 
-<script src="https://cdn.jsdelivr.net/gh/AspieSoft/toggle-darkmode-js/script.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/AspieSoft/toggle-darkmode-js@1.0.1/script.min.js"></script>
 
 ```
 
