@@ -15,6 +15,8 @@ Reverses filters on images, iframes, videos, embeds, ect.
 
 <!-- Depends On jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- or alternatively jqAlt (by AspieSoft) - v0.0.16 (alpha) or later -->
+<script src="https://cdn.jsdelivr.net/gh/AspieSoft/jqalt@0.0.16/jqalt/index.js" type="module"></script>
 
 <script src="https://cdn.jsdelivr.net/gh/AspieSoft/toggle-darkmode-js/script.min.js"></script>
 

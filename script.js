@@ -1,11 +1,25 @@
-/*! https://github.com/AspieSoft/toggle-darkmode-js v1.0.0 | (c) aspiesoftweb@gmail.com */
+/*! https://github.com/AspieSoft/toggle-darkmode-js v1.0.1 | (c) aspiesoftweb@gmail.com */
+;const DarkMode = (function(){
 
-;const DarkMode = (function($){
+  const $ = (function(){
+    if(typeof jQuery !== 'undefined'){
+      return jQuery
+    }else if(typeof jqAlt !== 'undefined'){
+      return jqAlt.jquery();
+    }
+    console.error('jQuery or jqAlt were not loaded!');
+    return undefined;
+  })();
+
+  if(!$){return;}
+
 
 	const ignoreElmList = [
 		'script',
 		'style',
 		'br',
+		'hr',
+		'wbr',
 	];
 
 	const avoidElmList = [
@@ -47,7 +61,7 @@
 				if(!tagName || ignoreElmList.includes(tagName.toLowerCase())){
 					return;
 				}
-				const background = elm.css('background-color');
+				const background = elm.css('background-color') || 'rgba(0, 0, 0, 0)';
 				if(!background || background === 'rgba(0, 0, 0, 0)'){
 					elm.css('background', elm.parent().css('background-color'));
 				}
@@ -80,10 +94,10 @@
 			});
 		}
 
-		$(body).bind('DOMSubtreeModified', function(){
-			setChildBackgrounds(body);
-			toggleDarkMode((!invertDarkToLight && darkMode) || (invertDarkToLight && !darkMode));
-		});
+    $('body').on('DOMSubtreeModified', function(){
+      setChildBackgrounds(body);
+      toggleDarkMode((!invertDarkToLight && darkMode) || (invertDarkToLight && !darkMode));
+    });
 	});
 
 	function toggleDarkMode(set){
@@ -227,4 +241,4 @@
 			}
 		},
 	};
-})(jQuery);
+})();
